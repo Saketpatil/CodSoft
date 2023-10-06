@@ -1,0 +1,401 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+
+/* setting the defaults setting to zero of the browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-weight: 300;
+    color: #111111;
+}
+
+/* to extend th cacnvas of the website */
+body {
+    min-height: 1000px;
+}
+
+/* removes the scrollbar */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/1.jpg);
+    background-size: cover;
+}
+
+.banner .content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2 {
+    font-size: 5rem;
+    color: #ffffff;
+}
+
+.banner .content p {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.btn {
+    font-size: 1em;
+    color: #ffffff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    transition: 0.5s;
+    
+}
+#butt1{
+    width: 210px;
+}
+.btn:hover {
+    letter-spacing: 8px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background: #ffffff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+}
+
+header .logo {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .logo {
+    color: #111111;
+}
+
+header .logo span {
+    color: #ff0157;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+header.sticky .navigation li a {
+    color: #111111;
+}
+
+header .navigation li a:hover {
+    color: #ff0157;
+}
+
+/* About section */
+section {
+    padding: 100px;
+}
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+.titleText {
+    color: #111111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titleText span {
+    color: #ff0157;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+#edu{
+    font-size: 1em;
+    font-weight: 400;
+    color: blue;
+}
+#met{
+    font-weight: 400;
+}
+.row .col50 .imgBox {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+.row .col50 .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+    
+}
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.work .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.work .content .box {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #ffffff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+.work .content .box .imgBox {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.work .content .box .imgBox img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.work .content .box .text {
+    padding: 15px 0 15px;
+    text-align: center;
+}
+#git{
+    font-size: 1em;
+    color: #ffffff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+#hub{
+    font-size: 1em;
+    color: #ffffff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    transition: 0.5s;
+    bottom: 600px;
+}
+.work .content .box .text h3 {
+    font-weight: 400;
+    color: #111111;
+}
+
+
+/* Contact styling */
+.contact {
+    background: url(img/bg.jpg);
+    background-size: cover;
+}
+
+.contactForm {
+    padding: 75px 50px;
+    background: #ffffff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contactForm h3 {
+    color: #111111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    border: 1px solid #555555;
+    padding: 10px;
+    color: #111111;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+
+.contactForm .inputBox input[type="submit"] {
+    font-size: 1em;
+    color: #ffffff;
+    background: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.cpText {
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.cpText p {
+    color: #333333;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    header,
+    header.sticky {
+        padding: 10px 20px;
+    }
+    header .navigation {
+        display: none;
+    }
+    header .navigation.active {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #ffffff;
+    }
+    header .navigation li {
+        margin-left: 0;
+    }
+    header .navigation li a {
+        color: #111111;
+        font-size: 1.4em;
+    }
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active {
+        background: url(img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    header.sticky .menuToggle {
+        filter: invert(1);
+    }
+    section {
+        padding: 45px 20px 20px;
+    }
+    .banner .content h2 {
+        font-size: 3em;
+        color: #ffffff;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgBox {
+        height: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .row .col50 .imgBox img {
+        width: 100%;
+        height: 123%;
+    }
+    .work .content {
+        margin-top: 20px;
+    }
+    .work .content .box {
+        margin: 10px;
+    }
+    .work .content .box .imgBox {
+        height: 290px;
+    }
+    .contactForm {
+        padding: 20px 30px;
+        margin-top: 32px;
+        margin-bottom: 20px;
+    }
+}

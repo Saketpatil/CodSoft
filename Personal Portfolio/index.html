@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saket Patil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header seciton -->
+    <header>
+        <a href="#" class="logo">Portfolio<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Project</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Banner section -->
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2 class="titleText"><span>S</span>aket Patil</h2>
+            <p>Hey! , I'm Saket Patil—a passionate web developer who loves transforming ideas into captivating interactive experiences. From web pages to full sites, I craft digital wonders. 💻🌐 
+            </p>
+            <a href="https://github.com/Saketpatil" class="btn" id="butt1">Github</a>
+            <a href="SaketCV.pdf" class="btn">Download CV</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>A</span>bout Me</h2>
+                <h3 id="edu">Education--------------------------------------------</h3>
+                <ul>
+                    <li><p id="met">MET’s Institute of Engineering, Nashik</p></li>
+                </ul>
+                <p>BE(Information Technology), pursuing(TE)</p>
+                <ul>
+                    <li>
+                        <p id="met">Pratap college, Amalner</p>
+                    </li>
+                </ul>
+                <p>HSC (Class XII)</p>
+                <ul>
+                    <li>
+                        <p id="met">G.S.Highschool,Amalner</p>
+                    </li>
+                <p>SSC (Class X)</p>   
+                </ul>
+                <h3 id="edu">Experience-------------------------------------------</h3>
+                <ul>
+                    <li><p id="met">Internship at CodSoft.</p></li>
+                </ul>
+                <p>Duration - 1 month.</p>
+                <p>Domain - Web Development</p>
+                <h3 id="edu">Profile-----------------------------------------------</h3>
+                <p>As a dedicated participant in the web development realm,
+                    i possesses a strong command of HTML,CSS,and Javascript,
+                    eager to enhance and contribute my knowledge in live web projects.
+                    also having interest to learn java, Spring, Android development, etc.
+
+                </p>
+            </div>
+            <div class="col50">
+                <div class="imgBox">
+                    <img src="img/bon-vivant 2.jpg" alt="img1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section class="work" id="work">
+        <div class="title">
+            <h2 class="titleText"><span>P</span>rojects</h2>
+            <p>A glimpse into my coding journey and creativity.</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="img/work5.jpg" alt="1">
+                </div>
+                <div class="text">
+                    <h3>Project 1</h3>
+                    <p>Landing page</p>
+                    <a href="https://github.com/Saketpatil/CodSoft/tree/main/landing-page" id="git">Github</a>
+
+                    <p>Landing page is of travelling it shows the booking of your dream destination place and it's details.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="img/calculator.webp" alt="1">
+                </div>
+                <div class="text">
+                    <h3>Project 2</h3>
+                    <p>Calculator</p>
+                    <a href="https://github.com/Saketpatil/CodSoft/tree/main/Calculator" id="git">Github</a>
+
+                    <p>A simple Calculator consist of buttons arranged by grid and functioning provided by javascript</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+     <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText"><span>C</span>ontact Me</h2>
+            <p>Get in touch for collaborations and projects.</p>
+        </div>
+        <div class="contactForm">
+            <h3>Enter-Details</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Context"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="submit">
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="cpText">
+        <p>Copyright &copy; 2020 | All Rights Reserved</p>
+    </div>
+
+    <!-- JS snippet for the pages scrolling -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
